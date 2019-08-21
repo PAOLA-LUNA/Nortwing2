@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nortwing.Views.ProductoView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="DATOS CATEGORIA" HorizontalOptions="Start" FontSize="Large"/>
+            <Label Text="Nombre Categoria:" HorizontalOptions="Start" FontSize="Small"/>
+            <Entry Placeholder="Nombre de la Categoria" x:Name="EntryNombreCategoria" PlaceholderColor="SandyBrown" 
+                   TextColor="SandyBrown"/>
+            <Entry Placeholder="Descripcion" x:Name="EntryDescripcion" PlaceholderColor="SandyBrown" 
+                   TextColor="SandyBrown"/>
+            <Label Text="DATOS DE LOS PRODUCTOS " HorizontalOptions="Start" FontSize="Large"/>
+            <StackLayout Orientation="Horizontal">
+            <Label Text="Nombre :" HorizontalOptions="Start" FontSize="Small"/>
+            <Entry Placeholder="NAME:" x:Name="EntryProducto" PlaceholderColor="SandyBrown" 
+                   TextColor="SandyBrown"/>
+                <Button Text="AGREGAR" x:Name="Agregar" Clicked="Agregar_Clicked" VerticalOptions="End"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

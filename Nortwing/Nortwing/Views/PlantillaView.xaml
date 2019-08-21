@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nortwing.Views.PlantillaView">
+    <ContentPage.Content>
+            <StackLayout>
+            <ListView x:Name="ListaProductos" ItemSelected="ListaProductos_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding NombreProducto}"/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                </ListView>
+            <StackLayout>
+                <Button Text="+" Clicked="Button_Clicked"></Button>
+             
+            </StackLayout>
+        </StackLayout>
+        
+       
+    </ContentPage.Content>
+</ContentPage>
